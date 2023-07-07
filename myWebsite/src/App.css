@@ -1,0 +1,98 @@
+.nav-item .nav-link {
+  text-decoration: none;
+  font-weight: 400;
+  transform: scale(1);
+  margin: 3%;
+  color: black;
+}
+.nav-item .nav-link:hover {
+  transform: scale(1.2);
+  text-decoration: underline;
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar-nav {
+    width: 100px;
+    display: flex;
+    align-items: center; /* Opsiyonel: Öğeleri dikey olarak hizalar */
+    margin-right: 0;
+    background-color: rgba(57, 57, 61, 0.9);
+    
+  }
+  .nav-item .nav-link{
+    color: white;
+    font-size: 15px;
+  }
+  .navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+    
+  }
+  .navbar-nav li {
+    margin-left: 10px; /* Opsiyonel: Öğeler arasında boşluk bırakır */
+    
+  }
+}
+.navbar-nav li{
+    font-size: 25px;    
+}
+
+
+.d-inline-block {
+  text-decoration: none;
+  font-weight: 400;
+  transform: scale(1);
+  margin: 3%;
+}
+.d-inline-block:hover {
+  transform: scale(1.3);
+  text-decoration: underline;
+}
+.resim {
+  transform: scale(1);
+}
+.resim:hover {
+  margin-top: 15px;
+  transform: scale(1.2);
+}
+@media screen and (max-width: 800px) {
+  .resim {
+    width: 225px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .yazi {
+    text-align: center;
+    
+  }
+}
+.card {
+    border: none;
+    box-shadow: none;
+}
+.btn{
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    transform: scale(1);
+}
+.btn:hover{
+    background-color: rgb(156, 238, 194);
+    transform: scale(1.1);
+    margin-left: 10px;
+    color: black;
+}
+.col {
+  transform: scale(1);
+}
+.col:hover{
+  transform: scale(1.1);
+}
+.hover{
+  transform: scale(1);
+}
+.hover:hover{
+  transform: scale(1.2);
+}
