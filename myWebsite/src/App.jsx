@@ -3,11 +3,18 @@ import AddIcCallIcon from "@mui/icons-material/AddIcCall";
 import AttachEmailSharpIcon from "@mui/icons-material/AttachEmailSharp";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-
 import React, { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 
 const App = () => {
+  const handleDownloadClick = () => {
+    // PDF dosyasının URL'i
+    const pdfUrl = 'Selim Zengin.pdf';
+    // Yeni sekmede PDF dosyasını açmak için
+    window.open(pdfUrl, '_blank');
+    // PDF dosyasını indirmek için
+    // window.location.href = pdfUrl;
+  };
   useEffect(() => {
     const sr = ScrollReveal();
 
@@ -168,7 +175,7 @@ const App = () => {
               Bilgisayar Programcılığı bölümünü okudum 2023 yılında mezun oldum.
               Hakkımda detaylı bilgi için Cv'mi inceleyebilirsiniz
             </p>
-            <a href="#" className="btn btn-primadry">
+            <a href="#" className="btn btn-primadry" onClick={handleDownloadClick}>
               CV'mi İndirmek İçin Tıklayın
             </a>
           </div>
@@ -421,7 +428,8 @@ const App = () => {
       >
         <br />
         <p style={{ color: "white", textAlign: "center", fontSize: 25 }}>
-          Selim Zengin | www.selimzengin.com
+          Selim Zengin | selimzengin.netlify.app
+
         </p>
       </div>
 
