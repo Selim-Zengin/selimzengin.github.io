@@ -7,14 +7,6 @@ import React, { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 
 const App = () => {
-  const handleDownloadClick = () => {
-    // PDF dosyasının URL'i
-    const pdfUrl = 'Selim Zengin.pdf';
-    // Yeni sekmede PDF dosyasını açmak için
-    window.open(pdfUrl, '_blank');
-    // PDF dosyasını indirmek için
-    // window.location.href = pdfUrl;
-  };
   useEffect(() => {
     const sr = ScrollReveal();
 
@@ -175,9 +167,7 @@ const App = () => {
               Bilgisayar Programcılığı bölümünü okudum 2023 yılında mezun oldum.
               Hakkımda detaylı bilgi için Cv'mi inceleyebilirsiniz
             </p>
-            <a href="#" className="btn btn-primadry" onClick={handleDownloadClick}>
-              CV'mi İndirmek İçin Tıklayın
-            </a>
+        
           </div>
         </div>
       </section>
@@ -330,8 +320,8 @@ const App = () => {
             aria-valuemax="100"
             style={{ height: 25 }}
           >
-            <div className="progress-bar bg-dark" style={{ width: "30%" }}>
-              <p style={{ fontSize: 20, marginTop: 13 }}>30%</p>
+            <div className="progress-bar bg-dark" style={{ width: "20%" }}>
+              <p style={{ fontSize: 20, marginTop: 13 }}>20%</p>
             </div>
           </div>
         </div>
@@ -428,10 +418,11 @@ const App = () => {
       >
         <br />
         <p style={{ color: "white", textAlign: "center", fontSize: 25 }}>
-          Selim Zengin | selimzengin.netlify.app
+          Selim Zengin | selimzengin-sweater.surge.sh
 
         </p>
       </div>
+      selimzengin-sweater. surge. sh
 
       {/* finish :) */}
     </>
